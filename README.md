@@ -1,17 +1,18 @@
 
-# Student Planner App
+# 📚 Student Planner App
 
 A **modern, responsive task management web application** built with **React**, **TypeScript**, and **Tailwind CSS**, designed to help students organize their academic life with ease.
 
-## Features
+## ✨ Features
 
-* **Task Management:** Add, edit, delete, and mark tasks as completed.
+* **Task Management:** 📝 Add, edit, delete, and mark tasks as completed.
 * **Task Categorization:** Assign tasks to custom categories with color coding.
-* **Urgency & Deadlines:** Set urgency levels (low, medium, high, critical) and deadlines with visual indicators.
-* **Drag-and-Drop:** Reorder tasks easily with drag-and-drop functionality.
+* **Urgency & Deadlines:** 🚨 Set urgency levels (low, medium, high, critical) and deadlines with visual indicators.
+* **Drag-and-Drop:** 🎯 Reorder tasks easily with drag-and-drop functionality.
 * **Filtering & Sorting:** Filter tasks by category, completion status, or show all tasks. Sort tasks by deadline, urgency, or recently added.
 * **Statistics Dashboard:** Quick overview of total tasks, completed tasks, pending tasks, and overdue tasks.
-* **Responsive Design:** Works seamlessly on desktop and mobile devices.
+* **Responsive Design:** 📱 Works seamlessly on desktop and mobile devices.
+* 💾 Local storage persistence
 
 ## Technologies Used
 
