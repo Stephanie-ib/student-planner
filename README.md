@@ -1,69 +1,84 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Student Planner App
 
-Currently, two official plugins are available:
+A **modern, responsive task management web application** built with **React**, **TypeScript**, and **Tailwind CSS**, designed to help students organize their academic life with ease.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+* **Task Management:** Add, edit, delete, and mark tasks as completed.
+* **Task Categorization:** Assign tasks to custom categories with color coding.
+* **Urgency & Deadlines:** Set urgency levels (low, medium, high, critical) and deadlines with visual indicators.
+* **Drag-and-Drop:** Reorder tasks easily with drag-and-drop functionality.
+* **Filtering & Sorting:** Filter tasks by category, completion status, or show all tasks. Sort tasks by deadline, urgency, or recently added.
+* **Statistics Dashboard:** Quick overview of total tasks, completed tasks, pending tasks, and overdue tasks.
+* **Responsive Design:** Works seamlessly on desktop and mobile devices.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Technologies Used
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* **React** – Frontend framework
+* **TypeScript** – Type safety and better developer experience
+* **Tailwind CSS** – Styling and responsive layout
+* **Lucide Icons** – Icon library for UI elements
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* `StudentPlannerApp.tsx` – Main component handling tasks, categories, and UI logic.
+* `Task` and `Category` interfaces – Define data structures for tasks and categories.
+* Components include modals for adding/editing tasks and categories, task list, filters, and stats cards.
+
+## Getting Started
+
+### Prerequisites
+
+* Node.js (v18 or above recommended)
+* npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+cd student-planner-app
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+# or
+yarn install
 ```
+
+3. Start the development server:
+
+```bash
+npm start
+# or
+yarn start
+```
+
+4. Open the app in your browser:
+
+```
+http://localhost:3000
+```
+
+## Usage
+
+* Click **Add Task** to create a new task with title, description, category, urgency, and deadline.
+* Click **Add Category** to create custom categories with color coding.
+* Use checkboxes to mark tasks as completed.
+* Drag tasks to reorder them.
+* Use filters and sort options in the sidebar to manage tasks efficiently.
+
+## Future Improvements
+
+* Add **user authentication** for personal task management.
+* Integrate **localStorage or database** to persist tasks across sessions.
+* Add **notifications/reminders** for upcoming deadlines.
+* Include **calendar view** for tasks and deadlines.
+
+## License
+
+This project is **MIT licensed**.
